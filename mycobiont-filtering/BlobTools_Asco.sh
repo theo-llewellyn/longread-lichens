@@ -9,6 +9,14 @@ ACCESSION2=LIQ254RAFAR
 
 cd $PBS_O_WORKDIR
 
+#taxify results of diamond using the taxid_mapping file to link GCA to NCBI taxonomy numbers
+/rds/general/user/tbl19/home/blobtools/blobtools taxify \
+ -f /rds/general/project/theollewellynproject/live/BlobTools/diamond_output/${ACCESSION}.vs.uniref90.diamond \
+ -m /rds/general/project/theollewellynproject/live/BlobTools/uniref90.fasta.taxlist \
+ -s 0 -t 1
+
+mv /rds/general/project/theollewellynproject/live/BlobTools/${ACCESSION}.vs.uniref90.diamond.taxified.out /rds/general/project/theollewellynproject/live/BlobTools/diamond_output/
+
 #taxify results of blast linking to wgs nucleotide taxids
 /rds/general/user/tbl19/home/blobtools/blobtools taxify \
  -f /rds/general/project/theollewellynproject/live/BlobTools/blast_output/${ACCESSION}.vs.Lecanoromycetes_genomes.blastn \
