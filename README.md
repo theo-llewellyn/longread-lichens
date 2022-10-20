@@ -7,6 +7,7 @@ Order is
 3. mycobiont-filtering-round
 5. error-correction
 6. mycobiont-filtering-round3
+7. annotation
 
 ## Basecalling & Assembly
 
@@ -44,3 +45,19 @@ The following steps remove redundant contigs and error correct the remaining myc
 2. `qsub diamond_Asco_round3.sh`
 3. `qsub BlobTools_Asco_round3.sh`
 4. `qsub pull_Asco_contigs_round3.sh`
+
+## Annotation
+
+### Structural annotation
+
+*Insert structural annotation instructions here*
+
+### Functional annotation
+
+These scripts were run on Queen Mary University of London's [Apocrita HPC facility](http://doi.org/10.5281/zenodo.438045) which uses the Univa 
+Grid Engine batch-queue system.
+
+1. `qsub antismash.sh`
+2. `qsub interproscan.sh`
+3. `qsub eggnogmapper.sh`
+4. `qsub funannotate_annotate.sh`
