@@ -48,6 +48,8 @@ The following steps remove redundant contigs and error correct the remaining myc
 
 ## Annotation
 
+`cd annotation`
+
 ### Structural annotation
 
 *Insert structural annotation instructions here*
