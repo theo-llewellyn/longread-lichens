@@ -59,6 +59,7 @@ The following steps identify repeat regions de novo, soft masks them and then an
 ### Structural annotation
 
 *Insert structural annotation instructions here*
+1. `qsub tapestry.sh`
 
 ### Functional annotation
 
