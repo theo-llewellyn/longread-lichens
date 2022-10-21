@@ -9,18 +9,18 @@ module load anaconda3/personal
 
 cd $PBS_O_WORKDIR
 
-export FUNANNOTATE_DB=/rdsgpfs/general/user/tbl19/home/anaconda3/envs/funannotate/funannotate_db
+export FUNANNOTATE_DB=funannotate/funannotate_db
 
 funannotate sort \
- -i  /rds/general/project/theollewellynproject/live/LIQ254RAFAR_ONT_data/${ACCESSION}_Asco_redundans_headers_filtered.fa \
- -o  /rds/general/project/theollewellynproject/live/LIQ254RAFAR_ONT_data/${ACCESSION}_Asco_redundans_headers_filtered_sorted.fa
+ -i  ${ACCESSION}_Asco_redundans_headers_filtered.fa \
+ -o  ${ACCESSION}_Asco_redundans_headers_filtered_sorted.fa
 
 source activate RepeatModeler
 
 #build database
-/rds/general/user/tbl19/home/software/RepeatModeler/BuildDatabase \
- -name /rds/general/project/theollewellynproject/ephemeral/RepeatModeler/${ACCESSION} \
- /rds/general/project/theollewellynproject/live/LIQ254RAFAR_ONT_data/${ACCESSION}_Asco_redundans_headers_filtered_sorted.fa
+RepeatModeler/BuildDatabase \
+ -name ${ACCESSION} \
+ ${ACCESSION}_Asco_redundans_headers_filtered_sorted.fa
 
 ## add dirs to @INC
 export PERL5LIB=${PERL5LIB}:/rds/general/user/tbl19/home/perl5/lib/perl5:/rds/general/user/tbl19/home/anaconda3/envs/RepeatModeler/lib/perl5/site_perl/5.32.0/x86_64-linux/:/rds/general/user/tbl19/home/anaconda3/envs/RepeatModeler/lib/perl5/site_perl/5.32.0:/rds/general/user/tbl19/home/anaconda3/envs/RepeatModeler/lib/perl5/5.32.0/x86_64-linux:/rds/general/user/tbl19/home/anaconda3/envs/RepeatModeler/lib/perl5/5.32.0
@@ -28,8 +28,8 @@ export PERL5LIB=${PERL5LIB}:/rds/general/user/tbl19/home/perl5/lib/perl5:/rds/ge
 perl -V
 
 #run repeatmodeller
-/rds/general/user/tbl19/home/software/RepeatModeler/RepeatModeler \
- -database /rds/general/project/theollewellynproject/ephemeral/RepeatModeler/${ACCESSION} \
- -pa 1 -LTRStruct >& /rds/general/project/theollewellynproject/ephemeral/RepeatModeler/${ACCESSION}.out
+RepeatModeler/RepeatModeler \
+ -database ${ACCESSION} \
+ -pa 1 -LTRStruct >& ${ACCESSION}.out
 
 conda deactivate
