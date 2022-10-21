@@ -50,6 +50,12 @@ The following steps remove redundant contigs and error correct the remaining myc
 
 `cd annotation`
 
+### Protein prediction
+
+1. `qsub repeatmodeler.sh`
+2. `qsub RepeatMasker.sh`
+3. `qsub funannotate.sh`
+
 ### Structural annotation
 
 *Insert structural annotation instructions here*
