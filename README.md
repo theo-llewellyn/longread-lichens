@@ -38,7 +38,7 @@ The following commands extract Ascomycota reads belonging to the mycobiont using
 
 ## Error correction
 `cd error-correction`   
-The following steps remove redundant contigs and error correct the remaining mycobiont reads.
+The following steps remove redundant contigs, error correct the remaining mycobiont reads, and produces a final blobplot for the mycobiont assembly.
 1. `qsub redundans.sh`
 2. `qsub Racon.sh`
 3. `qsub medaka.sh`
@@ -49,6 +49,7 @@ The following steps remove redundant contigs and error correct the remaining myc
 2. `qsub diamond_Asco_round3.sh`
 3. `qsub BlobTools_Asco_round3.sh`
 4. `qsub pull_Asco_contigs_round3.sh`
+5. `qsub mycobiont_figure_plot.sh`
 
 ## Annotation
 
