@@ -51,9 +51,9 @@ The following steps remove redundant contigs and error correct the remaining myc
 `cd annotation`
 
 ### Protein prediction
-
+The following steps identify repeat regions de novo, soft masks them and then annotates proteins.
 1. `qsub repeatmodeler.sh`
-2. `qsub RepeatMasker.sh`
+2. `qsub repeatmasker.sh`
 3. `qsub funannotate.sh`
 
 ### Structural annotation
