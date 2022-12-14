@@ -11,7 +11,8 @@ Order is
 3. mycobiont-filtering-round
 5. error-correction
 6. mycobiont-filtering-round3
-7. annotation
+7. K-mer profiling
+8. annotation
 
 ## Basecalling & Assembly
 
@@ -50,6 +51,11 @@ The following steps remove redundant contigs, error correct the remaining mycobi
 3. `qsub BlobTools_Asco_round3.sh`
 4. `qsub pull_Asco_contigs_round3.sh`
 5. `qsub mycobiont_figure_plot.sh`
+
+## K-mer profiling
+`cd kmer-profiling`
+1. `qsub jellyfish.sh`
+2. Kmer histogram uploaded to GenomeScope online webpage http://qb.cshl.edu/genomescope/
 
 ## Annotation
 
