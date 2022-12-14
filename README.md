@@ -4,14 +4,19 @@ Bioinformatic scripts/code for Llewellyn et al. (2022) Whole Genome Sequence and
 
 All bash scripts were run on the Imperial College London High Performance Computer except the Functional Annotation section (details below). This HPC uses the PBS queueing system, therefore core/RAM/runtimes in .sh scripts are specified in PBS format. All scripts are written for a single genome file.
 
-Order is 
+Order of analyses: 
 
-* [1. basecalling and assembly](https://github.com/theo-llewellyn/longread-lichens#basecalling--assembly)
-* [2. mycobiont-filtering-round](https://github.com/theo-llewellyn/longread-lichens#mycobiont-filtering)
-* [3. error-correction](https://github.com/theo-llewellyn/longread-lichens#error-correction)
-* [4. mycobiont-filtering-round3](https://github.com/theo-llewellyn/longread-lichens#mycobiont-filtering-round-3)
-* [5. K-mer profiling](https://github.com/theo-llewellyn/longread-lichens#k-mer-profiling)
-* [6. annotation](https://github.com/theo-llewellyn/longread-lichens#annotation)
+[1. basecalling and assembly](https://github.com/theo-llewellyn/longread-lichens#basecalling--assembly)
+
+[2. mycobiont-filtering-round](https://github.com/theo-llewellyn/longread-lichens#mycobiont-filtering)
+
+[3. error-correction](https://github.com/theo-llewellyn/longread-lichens#error-correction)
+
+[4. mycobiont-filtering-round3](https://github.com/theo-llewellyn/longread-lichens#mycobiont-filtering-round-3)
+
+[5. K-mer profiling](https://github.com/theo-llewellyn/longread-lichens#k-mer-profiling)
+
+[6. annotation](https://github.com/theo-llewellyn/longread-lichens#annotation)
 
 ## Basecalling & Assembly
 
