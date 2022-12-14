@@ -6,7 +6,7 @@ All bash scripts were run on the Imperial College London High Performance Comput
 
 Order is 
 
-1. basecalling(https://github.com/theo-llewellyn/longread-lichens#basecalling--assembly)
+1. basecalling (https://github.com/theo-llewellyn/longread-lichens#basecalling--assembly)
 2. assembly
 3. mycobiont-filtering-round[https://github.com/theo-llewellyn/longread-lichens#mycobiont-filtering]
 5. error-correction[https://github.com/theo-llewellyn/longread-lichens#error-correction]
