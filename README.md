@@ -6,13 +6,12 @@ All bash scripts were run on the Imperial College London High Performance Comput
 
 Order is 
 
-1. basecalling (https://github.com/theo-llewellyn/longread-lichens#basecalling--assembly)
-2. assembly
-3. mycobiont-filtering-round[https://github.com/theo-llewellyn/longread-lichens#mycobiont-filtering]
-5. error-correction[https://github.com/theo-llewellyn/longread-lichens#error-correction]
-6. mycobiont-filtering-round3[https://github.com/theo-llewellyn/longread-lichens#mycobiont-filtering-round-3]
-7. K-mer profiling[https://github.com/theo-llewellyn/longread-lichens#k-mer-profiling]
-8. annotation[https://github.com/theo-llewellyn/longread-lichens#annotation]
+[1. basecalling and assembly](https://github.com/theo-llewellyn/longread-lichens#basecalling--assembly)
+[2. mycobiont-filtering-round](https://github.com/theo-llewellyn/longread-lichens#mycobiont-filtering)
+[3. error-correction](https://github.com/theo-llewellyn/longread-lichens#error-correction)
+[4. mycobiont-filtering-round3](https://github.com/theo-llewellyn/longread-lichens#mycobiont-filtering-round-3)
+[5. K-mer profiling](https://github.com/theo-llewellyn/longread-lichens#k-mer-profiling)
+[6. annotation](https://github.com/theo-llewellyn/longread-lichens#annotation)
 
 ## Basecalling & Assembly
 
