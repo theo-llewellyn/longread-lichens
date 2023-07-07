@@ -1,6 +1,6 @@
 # longread-lichens
 
-Bioinformatic scripts/code for Llewellyn et al. (2023) First Whole-Genome Sequence and Flow Cytometry Genome Size Data for the Lichen-Forming Fungus Ramalina farinacea (Ascomycota). Genome Biology and Evolution 15(5), evad074 doi:10.1093/gbe/evad074
+Bioinformatic scripts/code for Llewellyn et al. (2023) First Whole-Genome Sequence and Flow Cytometry Genome Size Data for the Lichen-Forming Fungus Ramalina farinacea (Ascomycota). Genome Biology and Evolution 15(5), evad074 doi:10.1093/gbe/evad074[https://academic.oup.com/gbe/article/15/5/evad074/7156542]
 
 All bash scripts were run on the Imperial College London High Performance Computer except the Functional Annotation section (details below). This HPC uses the PBS queueing system, therefore core/RAM/runtimes in .sh scripts are specified in PBS format. All scripts are written for a single genome file.
 
